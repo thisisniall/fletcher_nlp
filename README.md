@@ -12,13 +12,14 @@ The local_analysis file was written python 2.7, and dependencies should be clear
 
 Note that for your own replications of the LDAvis in the local_analysis notebook, running LDAvis multiple times on the same exact dataset may result in different-looking graphs - this has to do with the massive amount of dimensionality reduction being done. Graphs that contain the same information on the right hand side may NOT look the same visually, so results are typically *not* strictly reproducible.
 
+---
 
 Intended Order Of Work:
 
 1) **RECOMMENDED:** Unpack the bills.json file with a .zip extractor.
 
- **ALTERNATIVE:** Run remote_scraper. **HOWEVER,** please take a look at the specific code in the remote_scraper algorithm before running - it can take an extended time (hours/overnight) to do the scraping, and the code as written was designed specifically to handle an event-related break that occured in the original execution of filling the db - it may not break at the same points for you, which could cause duplication errors that will later bias the analysis section.
+1a) **ALTERNATIVE:** Run remote_scraper. **HOWEVER,** please take a look at the specific code in the remote_scraper algorithm before running - it can take an extended time (hours/overnight) to do the scraping, and the code as written was designed specifically to handle an event-related break that occured in the original execution of filling the db - it may not break at the same points for you, which could cause duplication errors that will later bias the analysis section.
 
 2) Make sure you have installed any dependencies that are required by the first box (which has all the imported packages) in the local_analysis notebook.
 
-3) The local_analysis notebook should be good to run! I hope the word cloud and visualizations are enjoyable to view!
+3) The local_analysis notebook should be good to run! I hope the word cloud and visualizations are enjoyable to view! Please note my earlier comments about the irreproducibility of appearance of the LDAvis charts.
